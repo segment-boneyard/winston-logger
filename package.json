@@ -1,0 +1,10 @@
+{
+  "name": "create-winston-logger",
+  "private": true,
+  "dependencies": {
+    "winston-papertrail": "~0.1.4",
+    "winston": "~0.7.2",
+    "defaults": "~1.0.0",
+    "winston-mail": "~0.2.7"
+  }
+}
