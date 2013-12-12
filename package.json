@@ -1,5 +1,5 @@
 {
-  "name": "create-winston-logger",
+  "name": "s-winston-logger",
   "dependencies": {
     "winston-papertrail": "~0.1.4",
     "winston": "~0.7.2",
