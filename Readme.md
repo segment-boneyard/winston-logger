@@ -26,8 +26,8 @@ And `production` options:
     "file"    : true,
     "console" : false,
     "mail"    : {
-      "to": "alerts@mycomapny.com",
-      "from": "errors@mycomapny.com",
+      "to": "alerts@company.com",
+      "from": "errors@company.com",
       "level": "critical",
       "host": "smtp.sendgrid.net",
       "username": "sendgrid_user",
