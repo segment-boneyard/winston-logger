@@ -44,7 +44,7 @@ And `production` options:
 
 ## API
 
-# Logger(options)
+#### Logger(options)
 
     Create a winston logger with provided transports in the options.
 
