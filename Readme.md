@@ -1,17 +1,65 @@
-# create-winston-logger
+# winston-logger
 
-    Creates a winston multi-transport logger that's compatible with our logger configuration.
+  Create a simple winston logger using a simple API.
 
 ## Example
 
 ```js
-var conf = require('conf');
-var logger = createLogger(conf.logger);
+var Logger = require('winston-logger');
+
+var logger = Logger({ console: true });
 logger.info(..)
+```
+
+Here's an example `development` option set:
+
+```js
+{
+  "console" : true
+}
+```
+
+And `production` options:
+
+```js
+{
+    "file"    : true,
+    "console" : false,
+    "mail"    : {
+      "to": "alerts@mycomapny.com",
+      "from": "errors@mycomapny.com",
+      "level": "critical",
+      "host": "smtp.sendgrid.net",
+      "username": "sendgrid_user",
+      "password": "sendgrid_pass",
+      "ssl": false
+    },
+    "papertrail" : {
+      "host": "logs.papertrailapp.com",
+      "port": 10000,
+      "level": "error"
+    }
+  }
 ```
 
 ## API
 
-# createLogger(options)
+# Logger(options)
 
     Create a winston logger with provided transports in the options.
+
+## License
+
+```
+WWWWWW||WWWWWW
+ W W W||W W W
+      ||
+    ( OO )__________
+     /  |           \
+    /o o|    MIT     \
+    \___/||_||__||_|| *
+         || ||  || ||
+        _||_|| _||_||
+       (__|__|(__|__|
+```
+
