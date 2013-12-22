@@ -1,6 +1,6 @@
 # winston-logger
 
-  Create a simple winston logger using a simple API.
+  Create a winston logger using a simple API.
 
 ## Example
 
