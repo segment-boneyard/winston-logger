@@ -1,7 +1,11 @@
 {
   "name": "winston-logger",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/segmentio/winston-logger.git"
+  },
   "dependencies": {
     "winston-papertrail": "~1.0.1",
     "winston": "~0.8.3",
