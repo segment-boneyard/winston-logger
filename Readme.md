@@ -50,45 +50,46 @@ And `production` options:
 
 ###### Usage
 
-    Give winston logger the wanted winston module
+Give winston logger the wanted winston module
 
-    ```js
-    var winstonLogger = require('winston-logger')(require('winston'));
-    // verbose way: winston is unused
-    var winston = require('winston'),
-        winstonLogger = require('winston-logger')(winston)
-    // shortest way: winston will be loaded by winston-logger (will load the version in winston-logger's package json)
-    var winstonLogger = require('winston-logger')();
-    ```
+```js
+var winstonLogger = require('winston-logger')(require('winston'));
+// verbose way: winston is unused
+var winston = require('winston'),
+    winstonLogger = require('winston-logger')(winston)
+// shortest way: winston will be loaded by winston-logger
+// will load the version in winston-logger's package json
+var winstonLogger = require('winston-logger')();
+```
 
-    Configure colors and labels with the 'options' parameter
+Configure colors and labels with the 'options' parameter
 
-    ```js
-    var options = {
-        colors: {
-                  silly    : 'magenta',
-                  verbose  : 'blue',
-                  debug    : 'cyan',
-                  info     : 'green',
-                  warn     : 'yellow',
-                  error    : 'red',
-                  critical : 'red',
-                  fatal    : 'red'
-                },
-        labels: {
-                  silly: 0,
-                  verbose: 1,
-                  debug: 2,
-                  info: 3,
-                  warn: 4,
-                  error: 5,
-                  critical: 6,
-                  fatal: 7
-                }
-    };
+```js
+var options = {
+    colors: {
+              silly    : 'magenta',
+              verbose  : 'blue',
+              debug    : 'cyan',
+              info     : 'green',
+              warn     : 'yellow',
+              error    : 'red',
+              critical : 'red',
+              fatal    : 'red'
+            },
+    labels: {
+              silly: 0,
+              verbose: 1,
+              debug: 2,
+              info: 3,
+              warn: 4,
+              error: 5,
+              critical: 6,
+              fatal: 7
+            }
+};
 
-    var winstonLogger = require('winston-logger')(require('winston'), options);
-    ```
+var winstonLogger = require('winston-logger')(require('winston'), options);
+```
 
 
 #### WinstonLogger.create(options)
